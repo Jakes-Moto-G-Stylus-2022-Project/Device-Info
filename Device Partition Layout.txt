@@ -583,3 +583,83 @@ magisk /system/bin/magiskpolicy tmpfs ro,seclabel,relatime,mode=755 0 0
 /data/media /mnt/user/0/emulated/0/Android/obb sdcardfs rw,nosuid,nodev,noexec,noatime,fsuid=1023,fsgid=1023,gid=1015,multiuser,mask=6,derive_gid,default_normal,unshared_obb 0 0
 /data/media /storage/emulated/0/Android/obb sdcardfs rw,nosuid,nodev,noexec,noatime,fsuid=1023,fsgid=1023,gid=1015,multiuser,mask=6,derive_gid,default_normal,unshared_obb 0 0
 /data/media /mnt/installer/0/emulated/0/Android/obb sdcardfs rw,nosuid,nodev,noexec,noatime,fsuid=1023,fsgid=1023,gid=9997,multiuser,mask=7,derive_gid,default_normal,unshared_obb 0 0
+
+
+milan:/ # ls -al /dev/block/by-name
+total 0
+drwxr-xr-x 2 root root 1520 2024-07-25 23:54 .
+drwxr-xr-x 6 root root 3640 2024-07-25 23:54 ..
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 boot_a -> /dev/block/mmcblk0p39
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 boot_b -> /dev/block/mmcblk0p54
+lrwxrwxrwx 1 root root   20 2024-07-25 23:53 boot_para -> /dev/block/mmcblk0p2
+lrwxrwxrwx 1 root root   22 2024-07-25 23:54 bootloader1 -> /dev/block/by-name/lk1
+lrwxrwxrwx 1 root root   22 2024-07-25 23:54 bootloader2 -> /dev/block/by-name/lk2
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 carrier -> /dev/block/mmcblk0p16
+lrwxrwxrwx 1 root root   20 2024-07-25 23:53 cid -> /dev/block/mmcblk0p6
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 dtbo_a -> /dev/block/mmcblk0p41
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 dtbo_b -> /dev/block/mmcblk0p56
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 efuse -> /dev/block/mmcblk0p29
+lrwxrwxrwx 1 root root   20 2024-07-25 23:53 expdb -> /dev/block/mmcblk0p4
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 flashinfo -> /dev/block/mmcblk0p65
+lrwxrwxrwx 1 root root   20 2024-07-25 23:53 frp -> /dev/block/mmcblk0p5
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 gz_a -> /dev/block/mmcblk0p37
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 gz_b -> /dev/block/mmcblk0p52
+lrwxrwxrwx 1 root root   20 2024-07-25 23:53 hw -> /dev/block/mmcblk0p8
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 kpan -> /dev/block/mmcblk0p25
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 lk_a -> /dev/block/mmcblk0p38
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 lk_b -> /dev/block/mmcblk0p53
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 logo_a -> /dev/block/mmcblk0p30
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 logo_b -> /dev/block/mmcblk0p46
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 logs -> /dev/block/mmcblk0p15
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 md1img_a -> /dev/block/mmcblk0p33
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 md1img_b -> /dev/block/mmcblk0p48
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 md_udc -> /dev/block/mmcblk0p19
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 metadata -> /dev/block/mmcblk0p20
+lrwxrwxrwx 1 root root   20 2024-07-25 23:53 misc -> /dev/block/mmcblk0p1
+lrwxrwxrwx 1 root root   18 2024-07-25 23:53 mmcblk0 -> /dev/block/mmcblk0
+lrwxrwxrwx 1 root root   23 2024-07-25 23:53 mmcblk0boot0 -> /dev/block/mmcblk0boot0
+lrwxrwxrwx 1 root root   23 2024-07-25 23:53 mmcblk0boot1 -> /dev/block/mmcblk0boot1
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 nvcfg -> /dev/block/mmcblk0p17
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 nvdata -> /dev/block/mmcblk0p18
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 nvram -> /dev/block/mmcblk0p28
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 otp -> /dev/block/mmcblk0p64
+lrwxrwxrwx 1 root root   20 2024-07-25 23:53 pad1 -> /dev/block/mmcblk0p7
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 pad2 -> /dev/block/mmcblk0p23
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 pad3 -> /dev/block/mmcblk0p26
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 pad4 -> /dev/block/mmcblk0p32
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 pad5 -> /dev/block/mmcblk0p47
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 pad6 -> /dev/block/mmcblk0p58
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 pad7 -> /dev/block/mmcblk0p62
+lrwxrwxrwx 1 root root   20 2024-07-25 23:53 para -> /dev/block/mmcblk0p3
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 persist -> /dev/block/mmcblk0p13
+lrwxrwxrwx 1 root root   23 2024-07-25 23:53 preloader_a -> /dev/block/mmcblk0boot0
+lrwxrwxrwx 1 root root   23 2024-07-25 23:53 preloader_b -> /dev/block/mmcblk0boot1
+lrwxrwxrwx 1 root root   22 2024-07-25 23:54 preloader_raw_a -> /dev/block/mapper/pl_a
+lrwxrwxrwx 1 root root   22 2024-07-25 23:54 preloader_raw_b -> /dev/block/mapper/pl_b
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 prodpersist -> /dev/block/mmcblk0p14
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 proinfo -> /dev/block/mmcblk0p12
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 protect1 -> /dev/block/mmcblk0p21
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 protect2 -> /dev/block/mmcblk0p22
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 scp_a -> /dev/block/mmcblk0p35
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 scp_b -> /dev/block/mmcblk0p50
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 sec1 -> /dev/block/mmcblk0p27
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 seccfg -> /dev/block/mmcblk0p24
+lrwxrwxrwx 1 root root   20 2024-07-25 23:53 sp -> /dev/block/mmcblk0p9
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 spmfw_a -> /dev/block/mmcblk0p34
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 spmfw_b -> /dev/block/mmcblk0p49
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 sspm_a -> /dev/block/mmcblk0p36
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 sspm_b -> /dev/block/mmcblk0p51
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 super -> /dev/block/mmcblk0p59
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 tee_a -> /dev/block/mmcblk0p42
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 tee_b -> /dev/block/mmcblk0p57
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 tzapp_a -> /dev/block/mmcblk0p31
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 tzapp_b -> /dev/block/mmcblk0p45
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 userdata -> /dev/block/mmcblk0p63
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 utags -> /dev/block/mmcblk0p10
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 utagsBackup -> /dev/block/mmcblk0p11
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 vbmeta_a -> /dev/block/mmcblk0p43
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 vbmeta_b -> /dev/block/mmcblk0p60
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 vbmeta_system_a -> /dev/block/mmcblk0p44
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 vbmeta_system_b -> /dev/block/mmcblk0p61
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 vendor_boot_a -> /dev/block/mmcblk0p40
+lrwxrwxrwx 1 root root   21 2024-07-25 23:53 vendor_boot_b -> /dev/block/mmcblk0p55
