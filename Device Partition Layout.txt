@@ -145,3 +145,55 @@ major minor  #blocks  name
  253       28       5784 dm-28
  253       29       4094 dm-29
  253       30       4094 dm-30
+
+
+milan:/ # df
+Filesystem            1K-blocks     Used Available Use% Mounted on
+/dev/block/dm-5         1021344  1018252      3092 100% /
+tmpfs                   2928796     2788   2926008   1% /dev
+tmpfs                   2928796        0   2928796   0% /mnt
+/dev/block/mmcblk0p19     18308      168     18140   1% /metadata
+/dev/block/dm-6          862880   860296      2584 100% /system_ext
+/dev/block/dm-7          577672   575900      1772 100% /vendor
+/dev/block/dm-8         3762232  3750972     11260 100% /product
+magisk                  2928796     5224   2923572   1% /debug_ramdisk
+tmpfs                   2928796       52   2928744   1% /apex
+tmpfs                   2928796      592   2928204   1% /linkerconfig
+/dev/block/mmcblk0p21      3824      240      3584   7% /mnt/vendor/protect_f
+/dev/block/mmcblk0p22      3824      228      3596   6% /mnt/vendor/protect_s
+/dev/block/mmcblk0p18     59376     4308     55068   8% /mnt/vendor/nvdata
+/dev/block/mmcblk0p17     27632       76     27556   1% /mnt/vendor/nvcfg
+/dev/block/mmcblk0p13     43504      276     43228   1% /mnt/vendor/persist
+/dev/block/mmcblk0p14      3824      112      3712   3% /mnt/product/persist
+/dev/block/mmcblk0p31     11760     5304      6456  46% /mnt/vendor/tzapp
+/dev/block/dm-9       107838432 12665764  95172668  12% /data
+tmpfs                   2928796        0   2928796   0% /data_mirror
+/dev/block/loop6          36148    36116        32 100% /apex/com.android.i18n@1
+/dev/block/loop5         110896   110868        28 100% /apex/com.android.vndk.v30@1
+/dev/block/loop7           8448     8412        36 100% /apex/com.android.runtime@1
+/dev/block/loop8           1624     1596        28  99% /apex/com.google.mainline.primary.libs@331059000
+/dev/block/dm-10          21388    21360        28 100% /apex/com.android.tethering@341810050
+/dev/block/dm-11           1660     1632        28  99% /apex/com.google.mainline.primary.libs@341840000
+/dev/block/dm-12           6264     6232        32 100% /apex/com.android.media@341711000
+/dev/block/dm-13           3724     3696        28 100% /apex/com.android.os.statsd@341812000
+/dev/block/dm-14           7524     7492        32 100% /apex/com.android.neuralnetworks@341510000
+/dev/block/dm-15          16572    16540        32 100% /apex/com.android.cellbroadcast@341810000
+/dev/block/dm-16           4000     3972        28 100% /apex/com.android.resolv@341810000
+/dev/block/dm-17           8236     8208        28 100% /apex/com.android.adbd@341520010
+/dev/block/dm-18          26332    26304        28 100% /apex/com.android.media.swcodec@341711000
+/dev/block/loop20          2072     2044        28  99% /apex/com.android.appsearch@300000000
+/dev/block/dm-19            232      104       128  45% /apex/com.android.scheduling@341510000
+/dev/block/loop21           232       88       144  38% /apex/com.android.apex.cts.shim@1
+/dev/block/dm-20            784      756        28  97% /apex/com.android.tzdata@314012010
+/dev/block/dm-21           5892     5864        28 100% /apex/com.android.conscrypt@341810060
+/dev/block/loop24         40624    40596        28 100% /apex/com.android.vndk.v31@1
+/dev/block/dm-22            720      692        28  97% /apex/com.android.sdkext@341710000
+/dev/block/dm-23            776      748        28  97% /apex/com.android.ipsec@341611000
+/dev/block/dm-24          18820    18788        32 100% /apex/com.android.permission@341810000
+/dev/block/dm-25          23996    23968        28 100% /apex/com.android.extservices@341816020
+/dev/block/dm-26          51652    51608        44 100% /apex/com.android.art@341810020
+/dev/block/dm-27          11064    11036        28 100% /apex/com.android.mediaprovider@341812060
+/dev/block/dm-28           5760     5732        28 100% /apex/com.android.wifi@319999900
+worker                  2928796        0   2928796   0% /product/media
+/data/media           107838432 12665764  95172668  12% /mnt/runtime/default/emulated
+/dev/fuse             107838432 12665764  95172668  12% /mnt/installer/0/emulated
